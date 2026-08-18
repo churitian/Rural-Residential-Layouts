@@ -4,13 +4,13 @@ To systematically characterize the data composition and basic features of the Ru
 
 ## Graph Data Files
 
-| File                   | Layer       | Description                                                  |
+| File                   | Level       | Description                                                  |
 | ---------------------- | ----------- | ------------------------------------------------------------ |
 | `AttributeRoom.csv`    | Room        | Stores room-level attributes, including a unique index composed of the room ID and functional type, the functional type, area, and the center coordinates, width, and height of the bounding box. |
 | `AttributeRegion.csv`  | Region      | Stores region-level attributes, including a unique index composed of the region ID and functional type, the functional type, area, and the center coordinates, width, and height of the bounding box. |
 | `ConnectionRoom.csv`   | Room        | Stores connectivity relationships between room units established through door connections. |
 | `ConnectionRegion.csv` | Region      | Stores connectivity relationships between region units established through door connections. |
-| `affiliation.csv`      | Cross-layer | Stores the cross-level affiliation relationships between room units and region units. |
+| `affiliation.csv`      | Cross-level | Stores the cross-level affiliation relationships between room units and region units. |
 
 `ConnectionRoom.csv` and `ConnectionRegion.csv` record the original connectivity relationships between spatial units, whereas the relationship edges used at the room and region levels in the model are reconstructed according to the relative distances and overlap between the bounding boxes of spatial units at the corresponding level.
 
